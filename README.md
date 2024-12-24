@@ -160,6 +160,16 @@
   - `npm install --save-dev @electron-forge/cli`
 - 初期設定
   - `npx electron-forge import`
+  - `package.json`に、packageとmakeが追加される
+    ```json:package.json（追加）
+    //...
+    "scripts": {
+        "start": "electron-forge start",
+        "package": "electron-forge package",
+        "make": "electron-forge make"
+    },
+    //...
+    ```
 - ビルド
   - `npm run make`
   - 下記のファイルが作成される
